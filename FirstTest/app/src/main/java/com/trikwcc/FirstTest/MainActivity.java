@@ -12,31 +12,34 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private TextView resultado;
-    private EditText primeiro;
-    private EditText segundo;
+    private EditText primeiro, segundo;
+
+    Double first , second, result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toast.makeText(this, "Hello user", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Welcome User", Toast.LENGTH_SHORT).show();
 
         resultado = findViewById(R.id.resultado);
         primeiro = findViewById(R.id.primeiro);
         segundo = findViewById(R.id.segundo);
-
-
     }
 
     public void calculo (View view) {
         try {
-            double first = Double.parseDouble(primeiro.getText().toString());
-            double second = Double.parseDouble(segundo.getText().toString());
-            double result = first + second;
+            first = Double.parseDouble(primeiro.getText().toString());
+            second = Double.parseDouble(segundo.getText().toString());
+            result = first + second;
 
-            resultado.setText(String.valueOf(result));
+        resultado.setText("Resultado: " + String.valueOf(result));
         } catch (NumberFormatException e) {
-            Toast.makeText(this, "Invalid input. Please enter valid numbers.", Toast.LENGTH_SHORT).show();
+            if (first == null || second == null) {
+                Toast.makeText(this, "Insert values.", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(this, "Invalid input. Please enter valid numbers.", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 
