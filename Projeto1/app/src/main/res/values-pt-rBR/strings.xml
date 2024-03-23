@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Escolha o Gênero</string>
+    <string name="Gender">Gênero</string>
+    <string name="About">Sobre</string>
+    <string name="Leave">Sair</string>
+    <string name="textView">Alguma coisa sobre documentação e pessoas que trabalharam</string>
+    <string name="tileConfig">Configurações</string>
+    <string name="RadioBFem">Feminino</string>
+    <string name="RadioBMas">Masculino</string>
+    <string name="Return">Retornar</string>
+</resources>

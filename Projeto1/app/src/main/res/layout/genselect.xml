@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/Return_Select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Return" />
+
+    <RadioGroup
+        android:layout_width="261dp"
+        android:layout_height="731dp"
+        android:layout_marginStart="151dp">
+
+        <RadioButton
+            android:id="@+id/radMan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RadioBMas" />
+
+        <RadioButton
+            android:id="@+id/radWom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RadioBFem" />
+
+    </RadioGroup>
+</LinearLayout>

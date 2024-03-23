@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Select Gender</string>
+    <string name="Gender">Gender</string>
+    <string name="About">About</string>
+    <string name="Leave">Leave</string>
+    <string name="textView">Something about documentation and people that worked</string>
+    <string name="tileConfig">Configuration</string>
+    <string name="RadioBMas">Man</string>
+    <string name="RadioBFem">Woman</string>
+    <string name="Return">Return</string>
+
+</resources>
