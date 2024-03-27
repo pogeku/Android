@@ -10,25 +10,30 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Projeto1"
+        android:theme="@style/Theme.Prova"
         tools:targetApi="31">
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".AboutActivity"
-            android:exported="true">
+            android:name=".ConfigPage"
+            android:exported="true"
+            android:label="@string/main_app">
         </activity>
+
         <activity
-            android:name=".GenActivity"
-            android:exported="true">
+            android:name=".LoginPage"
+            android:exported="true"
+            android:label="@string/config_app">
         </activity>
+
     </application>
 
 </manifest>

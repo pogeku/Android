@@ -42,7 +42,7 @@ public class GenActivity extends AppCompatActivity implements CompoundButton.OnC
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         sharedPrefsEditor = sharedPrefs.edit();
         if (buttonView.getId() == R.id.radMan && isChecked) {
-            sharedPrefsEditor.putBoolean("IsMale", true);
+                sharedPrefsEditor.putBoolean("IsMale", true);
             Toast.makeText(this, "Você escolheu Masculino", Toast.LENGTH_SHORT).show();
         } else if (buttonView.getId() == R.id.radWom && isChecked) {
             sharedPrefsEditor.putBoolean("IsMale", false);

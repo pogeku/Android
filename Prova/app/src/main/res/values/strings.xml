@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Login Screen</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="cancel">Cancel</string>
+    <string name="returnrr">Return</string>
+    <string name="configuration">Configuration</string>
+    <string name="leave">Leave</string>
+    <string name="newUser">New Username</string>
+    <string name="newPass">New Password</string>
+    <string name="confirmPass">Confirm Password</string>
+    <string name="main_app">Main Screen</string>
+    <string name="config_app">Config Screen</string>
+</resources>
