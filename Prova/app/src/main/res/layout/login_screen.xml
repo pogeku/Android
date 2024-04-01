@@ -20,15 +20,14 @@
 
     <EditText
         android:id="@+id/Username"
-        android:layout_width="250dp"
+        android:layout_width="220dp"
         android:layout_height="40dp"
+        android:layout_marginStart="12dp"
         android:ems="10"
         android:hint="@string/username"
         android:inputType="text"
         app:layout_constraintStart_toEndOf="@id/textView"
-        app:layout_constraintTop_toTopOf="@id/textView"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="0dp" />
+        app:layout_constraintTop_toTopOf="@id/textView" />
 
     <TextView
         android:id="@+id/textView2"
@@ -43,42 +42,41 @@
 
     <EditText
         android:id="@+id/Password"
-        android:layout_width="250dp"
+        android:layout_width="220dp"
         android:layout_height="40dp"
+        android:layout_marginStart="16dp"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
         app:layout_constraintStart_toEndOf="@id/textView2"
-        app:layout_constraintTop_toTopOf="@id/textView2"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="0dp" />
+        app:layout_constraintTop_toTopOf="@id/textView2" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/login_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/login"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/button2"
-        app:layout_constraintTop_toBottomOf="@id/textView2"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp" />
+        android:layout_marginEnd="8dp"
+        android:text="@string/login"
+        app:layout_constraintEnd_toStartOf="@id/cancel_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView2" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/cancel_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/cancel"
-        app:layout_constraintStart_toEndOf="@id/button3"
-        app:layout_constraintEnd_toStartOf="@id/button"
-        app:layout_constraintTop_toTopOf="@id/button3"
+        app:layout_constraintStart_toEndOf="@id/login_button"
+        app:layout_constraintEnd_toStartOf="@id/config_login"
+        app:layout_constraintTop_toTopOf="@id/login_button"
         android:layout_marginStart="8dp"
         android:layout_marginTop="0dp"
         android:layout_marginEnd="8dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/config_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -86,7 +84,7 @@
         android:text="@string/configuration"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/button2"
-        app:layout_constraintTop_toTopOf="@id/button3" />
+        app:layout_constraintStart_toEndOf="@id/cancel_login"
+        app:layout_constraintTop_toTopOf="@id/login_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

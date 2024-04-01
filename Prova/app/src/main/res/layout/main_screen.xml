@@ -8,8 +8,8 @@
     <Button
         android:id="@+id/login"
         android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="91dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="120dp"
         android:text="@string/login"
         app:layout_constraintBottom_toBottomOf="@+id/config"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,7 +18,7 @@
     <Button
         android:id="@+id/config"
         android:layout_width="300dp"
-        android:layout_height="60dp"
+        android:layout_height="80dp"
         android:text="@string/configuration"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,8 +28,8 @@
     <Button
         android:id="@+id/leave"
         android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="87dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="120dp"
         android:text="@string/leave"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

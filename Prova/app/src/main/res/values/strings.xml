@@ -12,4 +12,5 @@
     <string name="confirmPass">Confirm Password</string>
     <string name="main_app">Main Screen</string>
     <string name="config_app">Config Screen</string>
+    <string name="app_lock">The app was locked due exceded tries</string>
 </resources>

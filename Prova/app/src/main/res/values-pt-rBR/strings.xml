@@ -13,4 +13,5 @@
     <string name="confirmPass">Confirmar Senha</string>
     <string name="main_app">Tela Principal</string>
     <string name="config_app">Tela de Configuração</string>
+    <string name="app_lock">O aplicativo foi travado devido ao excesso de tentativas</string>
 </resources>
