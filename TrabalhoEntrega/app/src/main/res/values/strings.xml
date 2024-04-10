@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">List Register</string>
+    <string name="config_screen">Configuration</string>
+    <string name="list_register">Register List</string>
+    <string name="list_manage">Manage List</string>
+    <string name="credit_screen">Credits</string>
+    <string name="list_config">Configuration</string>
+    <string name="list_share">Share</string>
+    <string name="list_about">About</string>
+    <string name="list_leave">Leave</string>
+</resources>
