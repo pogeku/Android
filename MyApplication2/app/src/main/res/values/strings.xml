@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Trilha UCSAL</string>
+    <string name="register_trail">Registrar Trilha</string>
+    <string name="manage_trail">Gerenciar Trilha</string>
+    <string name="share_trail">Compartilhar Trilha</string>
+    <string name="settings">Configurações</string>
+    <string name="about">Creditos</string>
+    <string name="about_title">Desenvolvedores</string>
+    <string name="developer_name_1">Caio Ricardo Lincoln</string>
+    <string name="developer_name_2">Nicolas Raimundo</string>
+    <string name="developer_name_3">Lorem Vitoria Cavalcante</string>
+    <string name="back_button">Voltar</string>
+
+    <string name="speed_unit">Unidade de Velocidade</string>
+    <string name="km_h">km/h (quilômetro por hora)</string>
+    <string name="m_s">m/s (metros por segundo)</string>
+    <string name="coordinate_format">Formato das Coordenadas Geográficas</string>
+    <string name="degrees">Graus [+/-DDD.DDDDD]</string>
+    <string name="degrees_minutes">Graus-Minutos [+/-DDD:MM.MMMMM]</string>
+    <string name="degrees_minutes_seconds">Graus-Minutos-Segundos [+/-DDD:MM:SS.SSSSS]</string>
+    <string name="map_orientation">Orientação do Mapa</string>
+    <string name="orientation_none">Nenhuma (manual)</string>
+    <string name="orientation_north_up">North Up (norte para cima)</string>
+    <string name="orientation_course_up">Course Up (direção de deslocamento)</string>
+    <string name="map_type">Tipo do Mapa</string>
+    <string name="vector">Vetorial</string>
+    <string name="satellite">Satélite</string>
+    <string name="title_activity_teste">Teste</string>
+</resources>
