@@ -47,8 +47,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent b = new Intent (this, ConfigPage.class);
             startActivity(b);
         }
-        if(id == R.id.leave){finish();}
+        if(id == R.id.leave){
             finish();
+        }
+
     }
 
 }

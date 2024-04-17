@@ -11,19 +11,14 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
-
         Button btnBackFromSettings = findViewById(R.id.btnBackFromSettings);
-
-
         btnBackFromSettings.setOnClickListener(this);
-
-
 
     }
         @Override
         public void onClick(View view) {
             int id = view.getId();
-        if(id == R.id.btnBackFromSettings){
+        if (id == R.id.btnBackFromSettings){
 
         }
     }

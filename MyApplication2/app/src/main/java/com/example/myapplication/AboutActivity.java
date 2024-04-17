@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class AboutActivity extends AppCompatActivity {
+public class AboutActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,13 +13,15 @@ public class AboutActivity extends AppCompatActivity {
         setContentView(R.layout.activity_about);
 
         Button btnBack = findViewById(R.id.btnBack);
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Finaliza a atividade atual e volta para a tela anterior
-                finish();
-            }
-        });
+        btnBack.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View view) {
+        int id = view.getId();
+        if(id == R.id.btnBack) {
+            finish();
+        }
     }
 
 }

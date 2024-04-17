@@ -9,4 +9,13 @@
     <string name="list_share">Compartilhar</string>
     <string name="list_about">Sobre</string>
     <string name="list_leave">Sair</string>
+    <string name="speed_unit">Unidade de Velocidade</string>
+    <string name="format_unit">Formato das coordenadas geográficas</string>
+    <string name="degree">Graus</string>
+    <string name="degree_minutes">Graus-Minutos</string>
+    <string name="degree_minutes_seconds">Graus-Minutos-Segundos</string>
+    <string name="map_orientation">Orientação do Mapa</string>
+    <string name="map_orientation_nothing">Nada</string>
+    <string name="map_orientation_CourseUp">Curso pra Cima</string>
+    <string name="map_orientation_northUp">Norte Acima</string>
 </resources>

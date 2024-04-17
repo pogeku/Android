@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tela_principal"><![CDATA[
+
+
+
+
+
+    " />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]]>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sobre"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="520dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Configurações"
+        tools:layout_editor_absoluteX="270dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar Trilha"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gerenciar Trilha"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="193dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="95dp"
+        android:layout_height="49dp"
+        android:text="Compartilhar Trilha"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="619dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Creditos"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="342dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

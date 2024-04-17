@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,35 +19,46 @@ public class MainActivity extends AppCompatActivity {
         Button btnSettings = findViewById(R.id.btnSettings);
         Button btnAbout = findViewById(R.id.btnAbout);
 
-        btnRegisterTrail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-            }
-        });
+        btnRegisterTrail.setOnClickListener(this);
+        btnManageTrail.setOnClickListener(this);
+        btnAbout.setOnClickListener(this);
+        btnShareTrail.setOnClickListener(this);
+        btnSettings.setOnClickListener(this);
 
-        btnManageTrail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-            }
-        });
-
-        btnShareTrail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-            }
-        });
-
-        btnSettings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-            }
-        });
-
-        btnAbout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, AboutActivity.class));
-            }
-        });
     }
+
+    @Override
+    public void onClick(View view) {
+        int id = view.getId();
+        if(id == R.id.btnAbout){
+            Intent a = new Intent (this, AboutActivity.class);
+            startActivity(a);
+        }
+
+        if(id == R.id.btnRegisterTrail){
+            Intent b = new Intent (this, RegisterTrailActivity.class);
+            startActivity(b);
+        }
+
+        /*if(id == R.id.btnShareTrail){
+            Intent c = new Intent (this, AboutActivity.class);
+            startActivity(c);
+        }*/
+
+        /*if(id == R.id.btnSettings){
+            Intent d = new Intent (this, .class);
+            startActivity(d);
+        } */
+
+        if(id == R.id.btnManageTrail){
+            Intent e = new Intent (this, AboutActivity.class);
+            startActivity(e);
+        }
+
+    }
+
+
+
+
+
 }
