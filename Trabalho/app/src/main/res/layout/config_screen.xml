@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/control_typeMap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:shadowColor="#59000000"
+        android:shadowDx="0"
+        android:shadowDy="4"
+        android:shadowRadius="10"
+        android:text="@string/speed_unit"
+        android:textColor="@color/orange"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline37"
+        app:layout_constraintEnd_toStartOf="@+id/guideline39"
+        app:layout_constraintHorizontal_bias="0.010"
+        app:layout_constraintStart_toStartOf="@+id/guideline40"
+        app:layout_constraintTop_toTopOf="@+id/guideline21"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:shadowColor="#59000000"
+        android:shadowDx="0"
+        android:shadowDy="4"
+        android:shadowRadius="10"
+        android:text="@string/cord_format"
+        android:textColor="@color/orange"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline41"
+        app:layout_constraintEnd_toStartOf="@+id/guideline39"
+        app:layout_constraintHorizontal_bias="0.010"
+        app:layout_constraintStart_toStartOf="@+id/guideline40"
+        app:layout_constraintTop_toTopOf="@+id/guideline38"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:shadowColor="#59000000"
+        android:shadowDx="0"
+        android:shadowDy="4"
+        android:shadowRadius="10"
+        android:text="@string/map_type"
+        android:textColor="@color/orange"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline45"
+        app:layout_constraintEnd_toStartOf="@+id/guideline39"
+        app:layout_constraintHorizontal_bias="0.010"
+        app:layout_constraintStart_toStartOf="@+id/guideline40"
+        app:layout_constraintTop_toTopOf="@+id/guideline44" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:shadowColor="#59000000"
+        android:shadowDx="0"
+        android:shadowDy="4"
+        android:shadowRadius="10"
+        android:text="@string/map_orientation"
+        android:textColor="@color/orange"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline43"
+        app:layout_constraintEnd_toStartOf="@+id/guideline39"
+        app:layout_constraintHorizontal_bias="0.010"
+        app:layout_constraintStart_toStartOf="@+id/guideline40"
+        app:layout_constraintTop_toTopOf="@+id/guideline42" />
+
+    <RadioGroup
+        android:id="@+id/control_speed"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/guideline38"
+        app:layout_constraintEnd_toStartOf="@+id/guideline39"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/guideline40"
+        app:layout_constraintTop_toTopOf="@+id/guideline37">
+
+        <RadioButton
+            android:id="@+id/km"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:buttonTint="@color/white"
+            android:drawableStart="@drawable/radio_white_btn"
+            android:drawablePadding="6dp"
+            android:fontFamily="@font/roboto"
+            android:shadowColor="#59000000"
+            android:shadowDx="0"
+            android:shadowDy="4"
+            android:shadowRadius="10"
+            android:text="@string/km"
+            android:textColor="@color/orange"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/m"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:buttonTint="@color/white"
+            android:drawableStart="@drawable/radio_white_btn"
+            android:drawablePadding="6dp"
+            android:fontFamily="@font/roboto"
+            android:shadowColor="#59000000"
+            android:shadowDx="0"
+            android:shadowDy="4"
+            android:shadowRadius="10"
+            android:text="@string/meter"
+            android:textColor="@color/orange"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/control_geographic"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/guideline42"
+        app:layout_constraintEnd_toStartOf="@+id/guideline39"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/guideline40"
+        app:layout_constraintTop_toTopOf="@+id/guideline41">
+
+        <RadioButton
+            android:id="@+id/A"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:buttonTint="@color/white"
+            android:drawableStart="@drawable/radio_white_btn"
+            android:drawablePadding="6dp"
+            android:fontFamily="@font/roboto"
+            android:shadowColor="#59000000"
+            android:shadowDx="0"
+            android:shadowDy="4"
+            android:shadowRadius="10"
+            android:text="@string/Degrees"
+            android:textColor="@color/orange"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/B"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:buttonTint="@color/white"
+            android:drawableStart="@drawable/radio_white_btn"
+            android:drawablePadding="6dp"
+            android:fontFamily="@font/roboto"
+            android:shadowColor="#59000000"
+            android:shadowDx="0"
+            android:shadowDy="4"
+            android:shadowRadius="10"
+            android:text="@string/Degrees_Minutes"
+            android:textColor="@color/orange"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/C"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:buttonTint="@color/white"
+            android:drawableStart="@drawable/radio_white_btn"
+            android:drawablePadding="6dp"
+            android:fontFamily="@font/roboto"
+            android:shadowColor="#59000000"
+            android:shadowDx="0"
+            android:shadowDy="4"
+            android:shadowRadius="10"
+            android:text="@string/Degrees_Minutes_Seconds"
+            android:textColor="@color/orange"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/control_map"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/guideline44"
+        app:layout_constraintEnd_toStartOf="@+id/guideline39"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/guideline40"
+        app:layout_constraintTop_toTopOf="@+id/guideline43">
+
+        <RadioButton
+            android:id="@+id/CourseUp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:buttonTint="@color/white"
+            android:drawableStart="@drawable/radio_white_btn"
+            android:drawablePadding="6dp"
+            android:fontFamily="@font/roboto"
+            android:shadowColor="#59000000"
+            android:shadowDx="0"
+            android:shadowDy="4"
+            android:shadowRadius="10"
+            android:text="@string/map_courseUp"
+            android:textColor="@color/orange"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/NorthUp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:buttonTint="@color/white"
+            android:drawableStart="@drawable/radio_white_btn"
+            android:drawablePadding="6dp"
+            android:fontFamily="@font/roboto"
+            android:shadowColor="#59000000"
+            android:shadowDx="0"
+            android:shadowDy="4"
+            android:shadowRadius="10"
+            android:text="@string/map_northUp"
+            android:textColor="@color/orange"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/Nothing"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:buttonTint="@color/white"
+            android:drawableStart="@drawable/radio_white_btn"
+            android:drawablePadding="6dp"
+            android:fontFamily="@font/roboto"
+            android:shadowColor="#59000000"
+            android:shadowDx="0"
+            android:shadowDy="4"
+            android:shadowRadius="10"
+            android:text="@string/map_nothing"
+            android:textColor="@color/orange"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/control_mapType"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/guideline51"
+        app:layout_constraintEnd_toStartOf="@+id/guideline39"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/guideline40"
+        app:layout_constraintTop_toTopOf="@+id/guideline45">
+
+        <RadioButton
+            android:id="@+id/Vector"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:buttonTint="@color/white"
+            android:drawableStart="@drawable/radio_white_btn"
+            android:drawablePadding="6dp"
+            android:fontFamily="@font/roboto"
+            android:shadowColor="#59000000"
+            android:shadowDx="0"
+            android:shadowDy="4"
+            android:shadowRadius="10"
+            android:text="@string/map_vetor"
+            android:textColor="@color/orange"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/Satellite"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:buttonTint="@color/white"
+            android:drawableStart="@drawable/radio_white_btn"
+            android:drawablePadding="6dp"
+            android:fontFamily="@font/roboto"
+            android:shadowColor="#59000000"
+            android:shadowDx="0"
+            android:shadowDy="4"
+            android:shadowRadius="10"
+            android:text="@string/map_satelite"
+            android:textColor="@color/orange"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="756dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="55dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="160dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="395dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="15dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="200dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="360dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="400dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="560dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="600dp" />
+
+    <Button
+        android:id="@+id/config_save"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/roboto"
+        android:padding="0dp"
+        android:shadowColor="#59000000"
+        android:shadowDx="0"
+        android:shadowDy="4"
+        android:shadowRadius="10"
+        android:shape="rectangle"
+        android:text="@string/save_operation"
+        android:textColor="@color/orange"
+
+        app:layout_constraintBottom_toTopOf="@+id/guideline66"
+        app:layout_constraintEnd_toStartOf="@+id/guideline47"
+        app:layout_constraintStart_toStartOf="@+id/guideline40"
+        app:layout_constraintTop_toTopOf="@+id/guideline33"
+        app:strokeColor="@android:color/white"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/config_return"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/roboto"
+        android:padding="0dp"
+        android:shadowColor="#59000000"
+        android:shadowDx="0"
+        android:shadowDy="4"
+        android:shadowRadius="10"
+        android:shape="rectangle"
+        android:text="@string/retomate"
+        android:textColor="@color/orange"
+
+        app:layout_constraintBottom_toTopOf="@+id/guideline66"
+        app:layout_constraintEnd_toStartOf="@+id/guideline39"
+        app:layout_constraintStart_toStartOf="@+id/guideline47"
+        app:layout_constraintTop_toTopOf="@+id/guideline33"
+        app:strokeColor="@android:color/white"
+        app:strokeWidth="2dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="875dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="15dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="710dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="829dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

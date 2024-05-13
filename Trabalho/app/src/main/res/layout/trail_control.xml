@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="411dp"
+        android:layout_height="800dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".RegisterTrailActivity" />
+
+
+    <Button
+        android:id="@+id/trail_register"
+        android:layout_width="115dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/roboto"
+        android:padding="0dp"
+        android:shadowColor="#5C000000"
+        android:shadowDy="4"
+        android:shadowRadius="24"
+        android:shape="rectangle"
+        android:text="@string/register"
+        android:textColor="@color/orange"
+        android:textSize="16sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline30"
+        app:layout_constraintEnd_toStartOf="@+id/guideline31"
+        app:layout_constraintStart_toStartOf="@+id/guideline27"
+        app:layout_constraintTop_toTopOf="@+id/guideline16"
+        app:strokeColor="@android:color/white"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/trail_settings"
+        android:layout_width="115dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/roboto"
+        android:padding="0dp"
+        android:shadowColor="#5C000000"
+        android:shadowDy="4"
+        android:shadowRadius="24"
+        android:shape="rectangle"
+        android:text="@string/settings"
+        android:textColor="@color/orange"
+        android:textSize="16sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline30"
+        app:layout_constraintEnd_toStartOf="@+id/guideline32"
+        app:layout_constraintStart_toStartOf="@+id/guideline31"
+        app:layout_constraintTop_toTopOf="@+id/guideline16"
+        app:strokeColor="@android:color/white"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/trail_return"
+        android:layout_width="115dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/roboto"
+        android:padding="0dp"
+        android:shadowColor="#5C000000"
+        android:shadowDy="4"
+        android:shadowRadius="24"
+        android:shape="rectangle"
+        android:text="@string/retomate"
+        android:textColor="@color/orange"
+        android:textSize="16sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline30"
+        app:layout_constraintEnd_toStartOf="@+id/guideline28"
+        app:layout_constraintStart_toStartOf="@+id/guideline32"
+        app:layout_constraintTop_toTopOf="@+id/guideline16"
+        app:strokeColor="@android:color/white"
+        app:strokeWidth="2dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="800dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="395dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="863dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="138dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="268dp" />
+
+    <SearchView
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_search_view"
+        android:elevation="5dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search..."
+        app:layout_constraintBottom_toTopOf="@+id/guideline58"
+        app:layout_constraintEnd_toStartOf="@+id/guideline28"
+        app:layout_constraintStart_toStartOf="@+id/guideline27"
+        app:layout_constraintTop_toTopOf="@+id/guideline29" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="190dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="80dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

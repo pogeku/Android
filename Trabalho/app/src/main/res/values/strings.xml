@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Path Exam</string>
+    <string name="choose_action">Choose an action</string>
+    <string name="register_path">Register Path</string>
+    <string name="share">Share Path</string>
+    <string name="manage">Manage Path</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="welcome">Welcome User</string>
+    <string name="local">Local</string>
+    <string name="day">Day</string>
+    <string name="period">Period</string>
+    <string name="register">Register</string>
+    <string name="leave">Leave</string>
+    <string name="first_version">First version of the trails app</string>
+    <string name="components">Team Components:</string>
+    <string name="convert">To convert</string>
+    <string name="km" translatable="false">Km/h</string>
+    <string name="meter" translatable="false">M/s</string>
+    <string name="Degrees">[+/-DDD.DDDDD]:</string>
+    <string name="Degrees_Minutes">[+/-DDD:MM.MMMMM]:</string>
+    <string name="Degrees_Minutes_Seconds">[+/-DDD:MM:SS.SSSSS]:</string>
+    <string name="speed_unit">Speed Unit</string>
+    <string name="cord_format">Geographic Coordinates Format</string>
+    <string name="map_orientation">Map Orientation</string>
+    <string name="map_type">Type of Map</string>
+    <string name="map_nothing">Nothing</string>
+    <string name="map_northUp">North Up</string>
+    <string name="map_courseUp">Course Up</string>
+    <string name="map_vetor">Vector</string>
+    <string name="map_satelite">Satellite</string>
+    <string name="retomate">Return</string>
+    <string name="save_operation">Save</string>
+</resources>
