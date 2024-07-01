@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Prova Trilhas</string>
+    <string name="choose_action">Escolha uma Ação</string>
+    <string name="register_path">Registrar Trilha</string>
+    <string name="share">Compartilhar Trilha</string>
+    <string name="manage">Gerenciar Trilha</string>
+    <string name="settings">Configuração</string>
+    <string name="about">Sobre</string>
+    <string name="welcome">Bem Vindo Usuário!</string>
+    <string name="local">Local</string>
+    <string name="day">Dia</string>
+    <string name="period">Periodo</string>
+    <string name="register">Registrar</string>
+    <string name="leave">Sair</string>
+    <string name="first_version">Primeira Versao do app de trilhas</string>
+    <string name="components">Componentes da Equipe:</string>
+    <string name="convert">Converter</string>
+    <string name="Degrees">[+/-GGG.GGGGG]:</string>
+    <string name="Degrees_Minutes">[+/-GGG:MM.MMMMM]:</string>
+    <string name="Degrees_Minutes_Seconds">[+/-GGG:MM:SS.SSSSS]:</string>
+    <string name="speed_unit">Unidade de velocidade</string>
+    <string name="cord_format">Formato das coordenadas geográficas:</string>
+    <string name="map_orientation">Orientação do Mapa</string>
+    <string name="map_type">Tipo do Mapa</string>
+    <string name="map_nothing">Nenhuma</string>
+    <string name="map_northUp">Norte Topo</string>
+    <string name="map_courseUp">Cursor pra Cima</string>
+    <string name="map_vetor">Vetor</string>
+    <string name="map_satelite">Satélite</string>
+    <string name="retomate">Retornar</string>
+    <string name="save_operation">Salvar</string>
+    <string name="manage_remove">Remover</string>
+    <string name="trail_reset">Resetar</string>
+    <string name="select_trail">Trail Select</string>
+    <string name="button_delete">Deletar</string>
+    <string name="button_share">Compartilhar</string>
+    <string name="start_date">Data de Início: %1$s</string>
+    <string name="distance">Distancia: %1$s</string>
+    <string name="duration">Duração: %1$s</string>
+    <string name="avg_speed">Velocidade Média: %1$s</string>
+    <string name="latitude">Latitude: %1$s</string>
+    <string name="longitude">Longitude: %1$s</string>
+    <string name="default_speed">Velocidade:</string>
+    <string name="default_timer">Tempo:</string>
+    <string name="default_distance">Distancia:</string>
+</resources>
